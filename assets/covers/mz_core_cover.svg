@@ -1,0 +1,25 @@
+<svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="900" rx="64" fill="#07080A"/>
+  <rect x="1" y="1" width="898" height="898" rx="63" stroke="white" stroke-opacity="0.06"/>
+  <path d="M0 0H900V900H0V0Z" fill="url(#g0)"/>
+  <path d="M96 214H804M96 686H804" stroke="#38BDF8" stroke-opacity="0.14" stroke-width="2"/>
+  <path d="M214 96V804M686 96V804" stroke="white" stroke-opacity="0.045" stroke-width="2"/>
+  <circle cx="450" cy="450" r="285" stroke="white" stroke-opacity="0.045" stroke-width="2"/>
+  <circle cx="450" cy="450" r="232" stroke="#38BDF8" stroke-opacity="0.13" stroke-width="2"/>
+  <circle cx="450" cy="450" r="171" stroke="white" stroke-opacity="0.06" stroke-width="1"/>
+  <path d="M280 470C323 372 382 323 450 323C518 323 577 372 620 470" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="8" stroke-linecap="round"/>
+  <path d="M324 521C357 466 399 438 450 438C501 438 543 466 576 521" stroke="white" stroke-opacity="0.22" stroke-width="8" stroke-linecap="round"/>
+  <path d="M370 569C392 542 419 528 450 528C481 528 508 542 530 569" stroke="#38BDF8" stroke-opacity="0.42" stroke-width="8" stroke-linecap="round"/>
+  <path d="M262 346L450 238L638 346V554L450 662L262 554V346Z" stroke="#38BDF8" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M342 720H558" stroke="#38BDF8" stroke-opacity="0.42" stroke-width="7" stroke-linecap="round"/>
+  <path d="M378 748H522" stroke="white" stroke-opacity="0.16" stroke-width="3" stroke-linecap="round"/>
+  <text x="450" y="178" text-anchor="middle" fill="white" fill-opacity="0.34" font-family="Inter, Arial, sans-serif" font-size="24" letter-spacing="8">LOADING AUDIO</text>
+  <text x="450" y="794" text-anchor="middle" fill="#38BDF8" fill-opacity="0.72" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="6">MZ_CORE</text>
+  <defs>
+    <radialGradient id="g0" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(452 452) rotate(90) scale(518)">
+      <stop stop-color="#38BDF8" stop-opacity="0.18"/>
+      <stop offset="0.42" stop-color="#0EA5E9" stop-opacity="0.045"/>
+      <stop offset="1" stop-color="#07080A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

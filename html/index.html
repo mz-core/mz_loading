@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MZ_CORE Loading</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="screen-shell" aria-label="Tela de carregamento MZ_CORE">
+        <canvas id="mz-live-wallpaper" aria-hidden="true"></canvas>
+        <div class="mz-atmosphere" aria-hidden="true">
+            <div class="ambient-orb orb-one"></div><div class="ambient-orb orb-two"></div>
+            <div class="light-beam beam-one"></div><div class="light-beam beam-two"></div>
+            <div class="ambient-grid"></div><div class="ambient-horizon"></div>
+            <div class="ambient-ring ring-one"></div><div class="ambient-ring ring-two"></div>
+        </div>
+        <div class="bg-noise"></div>
+        <div class="bg-vignette"></div>
+        <div class="top-line"></div>
+
+        <main class="layout">
+            <section class="hero" aria-label="Informações do servidor">
+                <div class="hero-inner reveal reveal-a">
+                    <div class="brand-mark" aria-label="Marca MZ_CORE">
+                        <img src="../assets/branding/logo.png" alt="MZ_CORE">
+                    </div>
+
+                    <div class="title-block">
+                        <p class="eyebrow">estrutura oficial mz_core</p>
+                        <h1 id="server-subtitle">Framework modular para experiências FiveM</h1>
+                        <p class="title-caption">Sistema iniciando módulos, sessão e recursos da cidade.</p>
+                    </div>
+
+                    <section class="status-card reveal reveal-b" aria-label="Progresso de carregamento">
+                        <div class="status-topline">
+                            <span id="stage-label">Preparando conexão</span>
+                            <strong id="progress-percent">0%</strong>
+                        </div>
+                        <div class="loadbar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                            <span id="progress-fill"></span>
+                        </div>
+                        <p id="download-desc">Aguarde enquanto o mz_core organiza sua entrada.</p>
+                    </section>
+
+                    <section id="feature-list" class="feature-list reveal reveal-c" aria-label="Recursos"></section>
+
+                    <section class="tip-line reveal reveal-d" aria-label="Dicas">
+                        <span>Dica</span>
+                        <p id="tip-text">Use /hud para personalizar sua interface.</p>
+                    </section>
+                </div>
+            </section>
+
+            <aside id="music-panel" class="side-panel reveal reveal-e" aria-label="Player de música e atalhos">
+                <button id="toggle-panel" class="panel-toggle" type="button" aria-label="Esconder player de música" aria-expanded="true">
+                    <span id="toggle-panel-icon">&gt;</span>
+                </button>
+
+                <div class="panel-top">
+                    <span>Tocando agora</span>
+                    <small id="server-version">v1.0.0</small>
+                </div>
+
+                <section class="music-player">
+                    <div class="cover-wrap">
+                        <img id="track-cover" src="../assets/covers/mz_core_cover.svg" alt="Capa da música">
+                        <div class="cover-shine"></div>
+                    </div>
+
+                    <div class="track-meta">
+                        <h2 id="track-title">MZ Core Ambient</h2>
+                        <p id="track-artist">mz_core</p>
+                    </div>
+
+                    <div class="seek-area">
+                        <input id="seek" type="range" min="0" max="1000" value="0" aria-label="Progresso da música">
+                        <div class="time-row">
+                            <span id="current-time">0:00</span>
+                            <span id="duration-time">0:00</span>
+                        </div>
+                    </div>
+
+                    <div class="player-controls">
+                        <button id="prev-track" type="button" aria-label="Música anterior">
+                            <svg viewBox="0 0 24 24"><path d="M19 5v14l-9-7 9-7Zm-11 0v14H5V5h3Z"/></svg>
+                        </button>
+                        <button id="toggle-play" class="play-button" type="button" aria-label="Reproduzir ou pausar">
+                            <svg class="icon-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7L8 5Z"/></svg>
+                            <svg class="icon-pause" viewBox="0 0 24 24"><path d="M7 5h4v14H7V5Zm6 0h4v14h-4V5Z"/></svg>
+                        </button>
+                        <button id="next-track" type="button" aria-label="Próxima música">
+                            <svg viewBox="0 0 24 24"><path d="M5 19V5l9 7-9 7Zm11 0V5h3v14h-3Z"/></svg>
+                        </button>
+                    </div>
+
+                    <div class="volume-row">
+                        <button id="toggle-mute" type="button" aria-label="Silenciar">
+                            <svg class="icon-volume" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4Zm12.5 7.1 1.4 1.4A7.9 7.9 0 0 0 20 12a7.9 7.9 0 0 0-2.1-5.5l-1.4 1.4A5.9 5.9 0 0 1 18 12a5.9 5.9 0 0 1-1.5 4.1Z"/></svg>
+                            <svg class="icon-muted" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4Zm12.7 3 2.6-2.6-1.4-1.4-2.6 2.6-2.6-2.6-1.4 1.4 2.6 2.6-2.6 2.6 1.4 1.4 2.6-2.6 2.6 2.6 1.4-1.4-2.6-2.6Z"/></svg>
+                        </button>
+                        <input id="volume" type="range" min="0" max="100" value="14" aria-label="Volume">
+                    </div>
+                </section>
+
+                <section class="keybinds" aria-label="Atalhos úteis">
+                    <h3>Atalhos úteis</h3>
+                    <div id="keybind-list"></div>
+                </section>
+            </aside>
+        </main>
+
+        <footer class="footer-line">
+            <span>MZ_CORE</span>
+            <span id="footer-status">Inicializando recursos</span>
+        </footer>
+    </div>
+
+    <div class="mz-cursor-glow" aria-hidden="true"></div>
+    <div class="mz-cursor" aria-hidden="true"><i class="cursor-dot"></i><i class="cursor-ring"></i><i class="cursor-crosshair"></i></div>
+    <audio id="mz-audio" preload="auto"></audio>
+    <script src="config.js"></script>
+    <script src="tracks.js"></script>
+    <script src="wallpaper.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
